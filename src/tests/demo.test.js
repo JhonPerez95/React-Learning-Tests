@@ -1,5 +1,4 @@
 describe('Pruebas en el archivo demo.test.js', () => {
-  //
   test('mensajes deben ser iguales', () => {
     // Arrange - Arreglar ||  Inicializacion
     const message = 'Hola mundo';
