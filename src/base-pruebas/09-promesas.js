@@ -31,5 +31,3 @@ export const getHeroeByIdAsync = (id) => {
     }, 1500);
   });
 };
-
-getHeroeByIdAsync(1).then(console.log).catch(console.warn);
