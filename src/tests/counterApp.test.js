@@ -12,9 +12,26 @@ describe('Pruebas al componente <CounterApp>', () => {
   //   // expect(getByText(num)).toBeInTheDocument();
   // });
 
+  let wrapper = shallow(<CounterApp value={5} />);
+
+  beforeEach(() => {
+    wrapper = shallow(<CounterApp value={5} />);
+  });
+
   test('Renderizado correctamente de <CounterApp/>', () => {
-    const count = 5;
-    const wrapper = shallow(<CounterApp value={count} />);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  test('Mostrar por defecto en valor 100 ', () => {
+    const wrapper = shallow(<CounterApp value={100} />);
+    const counterText = wrapper.find('h2').text().trim();
+    expect(counterText).toBe('100');
+  });
+
+  test('debe de incrementar con el botón +1', () => {
+    const btn = wrapper.find('div.button');
+    console.log(btn.html());
+    // const counterText = wrapper.find('h2').text().trim();
+    // expect(counterText).toBe('6');
   });
 });

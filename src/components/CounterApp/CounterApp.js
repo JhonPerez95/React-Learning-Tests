@@ -8,7 +8,7 @@ const CounterApp = ({ value }) => {
   const classes = useStyles();
 
   //STATE
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(value);
 
   //ONCLICK
   const handlerCount = () => {
@@ -24,23 +24,26 @@ const CounterApp = ({ value }) => {
   };
 
   return (
-    <div>
-      <>
-        <h1>Counter App</h1>
-        <h2>{count}</h2>
-        <div className={classes.root}>
-          <Button onClick={handlerCount} variant="contained" color="primary">
-            Count + {value}
-          </Button>
-          <Button onClick={handlerReset} variant="contained" color="secondary">
-            Reset
-          </Button>
-          <Button onClick={handlerCountRest} variant="contained">
-            Count - {value}
-          </Button>
-        </div>
-      </>
-    </div>
+    <>
+      <h1>Counter App</h1>
+      <h2>{count}</h2>
+      <div className={classes.root}>
+        <Button
+          onClick={handlerCount}
+          variant="contained"
+          color="primary"
+          id="btnIncrement"
+        >
+          Count + {value}
+        </Button>
+        <Button onClick={handlerReset} variant="contained" color="secondary">
+          Reset
+        </Button>
+        <Button onClick={handlerCountRest} variant="contained">
+          Count - {value}
+        </Button>
+      </div>
+    </>
   );
 };
 

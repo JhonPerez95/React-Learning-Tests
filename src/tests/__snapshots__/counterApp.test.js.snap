@@ -1,18 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pruebas al componente <CounterApp> Renderizado correctamente de <CounterApp/> 1`] = `
-<div>
+<Fragment>
   <h1>
     Counter App
   </h1>
   <h2>
-    0
+    5
   </h2>
   <div
     className="makeStyles-root-1"
   >
     <WithStyles(ForwardRef(Button))
       color="primary"
+      id="btnIncrement"
       onClick={[Function]}
       variant="contained"
     >
@@ -34,5 +35,5 @@ exports[`Pruebas al componente <CounterApp> Renderizado correctamente de <Counte
       5
     </WithStyles(ForwardRef(Button))>
   </div>
-</div>
+</Fragment>
 `;
