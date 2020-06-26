@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas al componente <CounterApp> Renderizado correctamente de <CounterApp/> 1`] = `
+<div>
+  <h1>
+    Counter App
+  </h1>
+  <h2>
+    0
+  </h2>
+  <div
+    className="makeStyles-root-1"
+  >
+    <WithStyles(ForwardRef(Button))
+      color="primary"
+      onClick={[Function]}
+      variant="contained"
+    >
+      Count + 
+      5
+    </WithStyles(ForwardRef(Button))>
+    <WithStyles(ForwardRef(Button))
+      color="secondary"
+      onClick={[Function]}
+      variant="contained"
+    >
+      Reset
+    </WithStyles(ForwardRef(Button))>
+    <WithStyles(ForwardRef(Button))
+      onClick={[Function]}
+      variant="contained"
+    >
+      Count - 
+      5
+    </WithStyles(ForwardRef(Button))>
+  </div>
+</div>
+`;
